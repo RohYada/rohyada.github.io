@@ -3,46 +3,109 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.hero {
+				padding: 3rem 0 2rem;
+				border-bottom: 1px solid rgb(var(--gray-light));
+				margin-bottom: 2rem;
+			}
+			.hero h1 {
+				margin: 0 0 0.5rem;
+				font-size: 2rem;
+			}
+			.hero p {
+				margin: 0 0 1.25rem;
+				color: rgb(var(--gray));
+				font-size: 1.1rem;
+				line-height: 1.6;
+			}
+			.hero-links {
+				display: flex;
+				gap: 1rem;
+			}
+			.hero-links a {
+				color: rgb(var(--accent));
+				text-decoration: none;
+				font-weight: 500;
+			}
+			.hero-links a:hover {
+				text-decoration: underline;
+			}
+			.posts h2 {
+				margin: 0 0 1.25rem;
+				font-size: 1.25rem;
+			}
+			ul.post-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			ul.post-list li {
+				margin-bottom: 1.5rem;
+			}
+			ul.post-list li a {
+				font-size: 1.1rem;
+				font-weight: 600;
+				text-decoration: none;
+				color: rgb(var(--black));
+			}
+			ul.post-list li a:hover {
+				color: rgb(var(--accent));
+			}
+			ul.post-list .date {
+				display: block;
+				font-size: 0.875rem;
+				color: rgb(var(--gray));
+				margin-top: 0.2rem;
+			}
+			ul.post-list .description {
+				display: block;
+				font-size: 0.95rem;
+				color: rgb(var(--gray));
+				margin-top: 0.25rem;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<h1>Rohan Yadalla</h1>
+				<p>
+					Aerospace engineering student at Rutgers University (Dec 2026).<br />
+					Interning at AlphaWave — building AI tools for healthcare.<br />
+					Interested in autonomy, flight systems, and where software meets the physical world.
+				</p>
+				<div class="hero-links">
+					<a href="/about">About</a>
+					<a href="https://github.com/RohYada" target="_blank">GitHub</a>
+					<a href="https://www.linkedin.com/in/rohan-yadalla/" target="_blank">LinkedIn</a>
+				</div>
+			</section>
+			<section class="posts">
+				<h2>Writing</h2>
+				<ul class="post-list">
+					{posts.map(post => (
+						<li>
+							<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+							<span class="date"><FormattedDate date={post.data.pubDate} /></span>
+							<span class="description">{post.data.description}</span>
+						</li>
+					))}
+				</ul>
+			</section>
 		</main>
 		<Footer />
 	</body>
