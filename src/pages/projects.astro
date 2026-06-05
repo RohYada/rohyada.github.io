@@ -1,0 +1,150 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Projects — Rohan Yadalla" description="Hardware, software, and engineering projects by Rohan Yadalla." />
+		<style>
+			main {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 3em 1em;
+			}
+			.page-header {
+				margin-bottom: 2.5rem;
+				border-bottom: 1px solid rgb(var(--gray-light));
+				padding-bottom: 1.5rem;
+			}
+			.page-header h1 {
+				font-size: 2rem;
+				margin-bottom: 0.4rem;
+			}
+			.page-header p {
+				color: rgb(var(--gray));
+				font-size: 1rem;
+				margin: 0;
+			}
+			.project-card {
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				padding: 1.5rem;
+				margin-bottom: 1.5rem;
+				transition: border-color 0.2s ease;
+			}
+			.project-card:hover {
+				border-color: rgb(var(--gray));
+			}
+			.project-top {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				gap: 1rem;
+				margin-bottom: 0.75rem;
+			}
+			.project-title {
+				font-size: 1.2rem;
+				font-weight: 700;
+				color: rgb(var(--black));
+				margin: 0;
+			}
+			.status-badge {
+				font-size: 0.75rem;
+				font-weight: 600;
+				padding: 0.25rem 0.6rem;
+				border-radius: 999px;
+				white-space: nowrap;
+				flex-shrink: 0;
+			}
+			.status-in-progress {
+				background-color: #fff3cd;
+				color: #856404;
+			}
+			.status-complete {
+				background-color: #d1e7dd;
+				color: #0a3622;
+			}
+			.status-blocked {
+				background-color: #f8d7da;
+				color: #842029;
+			}
+			.project-description {
+				font-size: 0.95rem;
+				color: rgb(var(--gray-dark));
+				margin-bottom: 1rem;
+				line-height: 1.6;
+			}
+			.project-tech {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.4rem;
+				margin-bottom: 1rem;
+			}
+			.tech-tag {
+				font-size: 0.75rem;
+				background-color: rgb(var(--gray-light));
+				color: rgb(var(--gray-dark));
+				padding: 0.2rem 0.5rem;
+				border-radius: 4px;
+			}
+			.project-links {
+				display: flex;
+				gap: 0.75rem;
+			}
+			.project-link {
+				font-size: 0.875rem;
+				font-weight: 600;
+				color: var(--accent);
+				text-decoration: none;
+			}
+			.project-link:hover {
+				text-decoration: underline;
+			}
+			.project-link.disabled {
+				color: rgb(var(--gray));
+				cursor: default;
+				pointer-events: none;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="page-header">
+				<h1>Projects</h1>
+				<p>Hardware, software, and engineering work — built outside the classroom.</p>
+			</div>
+
+			<!-- LED Ceiling Controller -->
+			<div class="project-card">
+				<div class="project-top">
+					<h2 class="project-title">Programmable LED Ceiling Controller</h2>
+					<span class="status-badge status-in-progress">In Progress</span>
+				</div>
+				<p class="project-description">
+					A custom controller for 24 independent ceiling panels, each lined with WS2812B LED strips.
+					Every panel runs its own mode simultaneously — one can pulse to music, another can display
+					whether the stock market closed up or down, another can hold a static color. Built on an
+					ESP32 microcontroller with a web interface for real-time control from any device on the
+					network.
+				</p>
+				<div class="project-tech">
+					<span class="tech-tag">ESP32</span>
+					<span class="tech-tag">C</span>
+					<span class="tech-tag">WS2812B</span>
+					<span class="tech-tag">WebSocket</span>
+					<span class="tech-tag">Embedded Systems</span>
+				</div>
+				<div class="project-links">
+					<span class="project-link disabled">GitHub — coming soon</span>
+				</div>
+			</div>
+
+		</main>
+		<Footer />
+	</body>
+</html>
