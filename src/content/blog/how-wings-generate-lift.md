@@ -2,7 +2,6 @@
 title: 'How Wings Actually Generate Lift'
 description: 'Bernoulli is not wrong — it is just the first chapter. Here is the more complete story behind one of the most fundamental concepts in aerospace engineering.'
 pubDate: 'Jun 04 2026'
-heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Most people learn the same explanation in school. Air hits the wing and splits — some goes over the top, some goes under. The top of the wing is curved, so air has farther to travel. To cover more distance in the same time, it has to speed up. Faster air means lower pressure. Lower pressure on top, higher pressure on the bottom — and the wing gets pushed upward.
