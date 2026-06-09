@@ -1,7 +1,7 @@
 ---
-title: 'The Magnus Effect: Why Spinning Balls Don't Fly Straight'
-description: 'A spinning ball curves through the air in ways that seem to defy intuition. The physics behind it is called the Magnus effect — and when you simulate it in ANSYS, the pressure field tells the whole story.'
-pubDate: 'Jun 09 2026'
+title: "The Magnus Effect: Why Spinning Balls Don't Fly Straight"
+description: "A spinning ball curves through the air in ways that seem to defy intuition. The physics behind it is called the Magnus effect — and when you simulate it in ANSYS, the pressure field tells the whole story."
+pubDate: "Jun 09 2026"
 ---
 
 Most people have seen it without knowing what it is. A curveball that breaks late. A soccer free kick that bends around the wall. A golf shot that draws back toward the fairway. In each case, the ball is spinning — and that spin is doing something to the air around it.
