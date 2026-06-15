@@ -24,6 +24,10 @@ That 14.5x stiffness difference produced a result I didn't expect. The peak stra
 
 But on the stress side, the picture was different. Maximum σ11 was 2481 MPa and maximum σ22 was 2074 MPa — only about 20% apart. Same material, same loading. Strains vary by a factor of 13, stresses by only 1.2. That gap is what anisotropy looks like in numbers, and it is not obvious until you run the calculation.
 
+![Strains and stresses on SM Carbon vs fiber angle under X-Y loads — showing how ε22 and σ22 diverge sharply from ε11 and σ11 as orientation changes](/images/AMHW1Graph.png)
+
+![Results table: maxima and minima for strains and stresses across all orientations](/images/AMHW1Result.png)
+
 The analysis also found something practical. At a fiber orientation of 29°, σ11 peaks while the cross-fiber stress and strain both hit their minimums, and shear stress drops to nearly zero — 5.5 MPa. That makes 29° a near-optimal fiber angle for this particular loading condition. Rotate the fibers to the wrong angle and you are running the load straight into the weak direction.
 
 ## Why This Shows Up in Every Modern Aircraft
