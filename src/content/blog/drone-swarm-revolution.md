@@ -1,7 +1,6 @@
 ---
 title: "The Drone Swarm Revolution: Why Flying in Formation Could Change Everything"
-date: 2026-06-17
-tags: [drones, autonomy, aerospace, swarm-robotics]
+pubDate: 'Jun 17 2026'
 description: "Hundreds of drones painting pictures in the night sky look like one machine. They're not. Here's how a swarm actually thinks."
 ---
 
