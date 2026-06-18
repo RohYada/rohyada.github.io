@@ -22,11 +22,11 @@ Steel and aluminum don't work this way. They are isotropic — push them from an
 
 Before the numbers: two units come up constantly in structural analysis.
 
-**Stress** (measured in MPa — megapascals) is force per unit area. It tells you how hard the material is being pushed or pulled at any given point. One MPa is roughly the pressure of a 100 kg weight balanced on a 1 cm² surface. Aerospace structures routinely operate at hundreds or thousands of MPa.
+**Stress** (measured in MPa, or megapascals) is force per unit area. It tells you how hard the material is being pushed or pulled at any given point. One MPa is roughly the pressure of a 100 kg weight balanced on a 1 cm² surface. Aerospace structures routinely operate at hundreds or thousands of MPa.
 
 **Strain** is dimensionless — it is a ratio of how much a material deforms relative to its original length. A strain of 0.01 means the material stretched by 1% of its original size. Small numbers, big consequences.
 
-**Stiffness** (measured in GPa — gigapascals, or billions of pascals) tells you how much stress it takes to produce a given strain. A stiffer material deforms less under the same load. Steel has a stiffness of about 200 GPa. Carbon fiber along the fibers beats that at 145 GPa — at about one-fifth the weight.
+**Stiffness** (measured in GPa, or gigapascals, meaning billions of pascals) tells you how much stress it takes to produce a given strain. A stiffer material deforms less under the same load. Steel has a stiffness of about 200 GPa. Carbon fiber along the fibers beats that at 145 GPa — at about one-fifth the weight.
 
 ## What the Numbers Actually Look Like
 

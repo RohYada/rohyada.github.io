@@ -10,13 +10,13 @@ That is why hypersonic flight is the hardest open problem in aerospace right now
 
 ## What Mach 5 Actually Means
 
-The **Mach number** is the ratio of a vehicle's speed to the local speed of sound — roughly 340 m/s at sea level. Mach 1 is the speed of sound itself. Mach 2 is twice that. Commercial aircraft cruise around Mach 0.85. Military jets like the F-35 top out near Mach 1.6.
+The **Mach number** is the ratio of a vehicle's speed to the local speed of sound (roughly 340 m/s at sea level). Mach 1 is the speed of sound itself. Mach 2 is twice that. Commercial aircraft cruise around Mach 0.85. Military jets like the F-35 top out near Mach 1.6.
 
 Supersonic flight starts at Mach 1. Hypersonic flight starts at Mach 5 — about 1,700 m/s, or 6,100 km/h.
 
 The line isn't arbitrary. Below Mach 5, the flow physics are complicated but manageable with well-established tools. Above Mach 5, a new set of effects takes over that changes the problem entirely. The air stops acting like an ideal gas. The heat stops being an engineering nuisance and becomes the primary design constraint.
 
-## What a Shock Wave Is — and Why It Gets Worse
+## What a Shock Wave Is, and Why It Gets Worse
 
 When a subsonic aircraft moves through air, pressure disturbances travel ahead of it at the speed of sound, giving the air time to smoothly adjust around the wing. At supersonic speeds, the vehicle outruns those disturbances. The air gets no warning. Instead of adjusting gradually, it compresses almost instantly across a sharp discontinuity — a **shock wave** — where pressure, temperature, and density all jump abruptly.
 

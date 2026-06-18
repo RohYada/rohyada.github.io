@@ -24,7 +24,7 @@ In my Aerodynamics course at Rutgers, we derived the equation that quantifies th
 
 **CDi = CL² / (π · e · AR)**
 
-Unpacked: **CDi** is the induced drag coefficient; **CL** is the lift coefficient (how hard the wing is working to generate lift); **e** is the Oswald efficiency factor (how close the lift distribution is to the theoretical optimum ellipse); and **AR** is the **aspect ratio** — wingspan squared divided by wing area, a measure of how long and narrow the wing is.
+Unpacked: **CDi** is the induced drag coefficient; **CL** is the lift coefficient (how hard the wing is working to generate lift); **e** is the Oswald efficiency factor (how close the lift distribution is to the theoretical optimum ellipse); and **AR** is the **aspect ratio** (wingspan squared divided by wing area, a measure of how long and narrow the wing is).
 
 Two things jump out. First, induced drag scales with the square of CL — it gets dramatically worse at low speeds and high angles of attack, exactly when you need maximum lift (takeoff and landing). Second, a higher aspect ratio directly reduces induced drag. Longer, narrower wings are always more efficient. Gliders exploit this: a sailplane's aspect ratio can be 40 or higher because there's no gate width to worry about. A 737's is around 10.
 

@@ -12,9 +12,9 @@ The Cessna 172 uses a NACA 2412. So does almost every other light trainer built 
 
 The NACA four-digit system encodes three things:
 
-- **First digit** — maximum camber, as a percentage of chord length
-- **Second digit** — where that maximum camber sits along the chord, in tenths
-- **Last two digits** — maximum thickness, as a percentage of chord
+- **First digit:** maximum camber, as a percentage of chord length
+- **Second digit:** where that maximum camber sits along the chord, in tenths
+- **Last two digits:** maximum thickness, as a percentage of chord
 
 So NACA 2412 means: 2% max camber, located at 40% of the chord, with 12% thickness. That's the whole shape in four digits.
 
