@@ -30,7 +30,7 @@ He verified this in NASA Langley's transonic wind tunnel and published in 1952. 
 
 In my aerodynamics class at Rutgers, we derived the Prandtl-Glauert correction factor (the term 1/sqrt(1-M²), where M is the Mach number), which shows how pressure coefficients scale up as you approach Mach 1. Compressibility near Mach 1 isn't a gentle gradient; it's a cliff. Drag coefficients that barely shift between Mach 0.5 and 0.8 can nearly double in the narrow band from Mach 0.88 to 1.0. The area rule is the structural design answer: control the volume distribution along the aircraft's length so that the combined shock system sees a smooth, tapered body rather than a fuselage with wings bolted on.
 
-When Whitcomb's team reshaped the YF-102 into the F-102A — same engine, same thrust, same wings, pinched fuselage — the aircraft hit Mach 1.22 in level flight on its first attempt. No new powerplant. Just a Coke bottle waist.
+When Whitcomb's team reshaped the YF-102 into the F-102A (same engine, same thrust, same wings, pinched fuselage), the aircraft hit Mach 1.22 in level flight on its first attempt. No new powerplant. Just a Coke bottle waist.
 
 ## Why It Still Matters
 
