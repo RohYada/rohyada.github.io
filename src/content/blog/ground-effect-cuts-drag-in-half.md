@@ -1,0 +1,33 @@
+---
+title: 'Why Flying a Few Feet Above the Water Cuts an Aircraft''s Drag Nearly in Half'
+description: 'A Cold War idea that never quite worked is back, and the physics behind it explains why skimming low over water is suddenly a serious design strategy again.'
+pubDate: 'Jul 07 2026'
+---
+
+Fly a wing close enough to the ground or water, and it starts cheating. Not the lift equation, just the drag it has to pay to get that lift. Get low enough and that drag bill drops by almost half.
+
+That's the whole idea behind ground effect, and it's why a strange class of vehicle is suddenly back in the news. China was recently photographed flying a huge jet-powered craft a few meters above the South China Sea, nicknamed the "Bohai Sea Monster," now spotted with weapons pylons underneath. Singapore's ST Engineering is trying to get a ten-seat version flying paying passengers between Singapore and Batam by the end of the year. A US startup called Regent is running sea trials on an all-electric version in Rhode Island. None of these are quite planes and none are quite boats. They're wing-in-ground-effect craft, and they exist because of one aerodynamic quirk most pilots only meet by accident during landing.
+
+## What's actually happening under the wing
+
+Every wing generating lift also generates a cost for it, called induced drag (drag that comes specifically from producing lift, separate from the drag caused by skin friction or shape). The mechanism is the wingtip vortex: high-pressure air under the wing spills around the tip to the low-pressure air on top, rolling into a swirling vortex that trails behind. That swirl bends the airflow near the tip downward, and that downward-bent flow (downwash) tilts the wing's lift vector slightly backward. A backward-tilted lift vector has a horizontal component, and that horizontal component is induced drag. The harder a wing works to generate lift, the bigger the vortices, the more the flow gets bent down, and the more drag you pay for it.
+
+Now put that same wing within about a wingspan of the ground or water. The vortex can't fully form, because there's a solid or near-solid surface interrupting the airflow that would normally curl underneath and around the tip. The downwash gets squeezed and partially cancelled, so the lift vector straightens back up toward vertical. Less backward tilt means less horizontal component means less induced drag, for the exact same amount of lift.
+
+The size of the effect depends entirely on how close you are, measured in wingspans. Standard aerodynamics references (the ratio comes from classical vortex-image theory, where the ground is modeled as a mirror that cancels the vortex below it) put the number at about a 23.5% reduction in induced drag when the wing is flying at a height equal to one-quarter of its wingspan, and nearly 47.6% at one-tenth of its span. I ran those two numbers against a WIG craft's actual cruise geometry, a vehicle with maybe a 20-meter wingspan skimming a few meters over open water, and the height-to-span ratio lands well inside that one-tenth range. That's not a marginal efficiency gain from good wing design. That's close to half the drag from lift itself disappearing, just from flying low.
+
+Every pilot has felt a small version of this without knowing the name for it. An aircraft that seems reluctant to touch down, floating just above the runway longer than expected during landing flare, is riding out ground effect. The wing suddenly needs less angle of attack to hold the same lift, so it stops decelerating the way the pilot expects and the runway keeps sliding by underneath. It's the same physics as the Bohai Sea Monster, just for two or three seconds instead of an entire mission profile.
+
+There's a second piece to the mechanism that matters for anyone trying to actually design around it: the air cushion. As the wing gets close to a surface, the air trapped underneath has nowhere to escape except sideways and backward, so it compresses slightly and pushes back up on the wing. That cushion adds lift on top of the induced-drag savings, which is why WIG craft can often fly with a smaller wing than a conventional aircraft carrying the same weight would need. Combine a smaller, lighter wing with a wing that's already paying less drag for the lift it does make, and the payload numbers start to look closer to a cargo ship's than a cargo plane's.
+
+## Why anyone would build a vehicle around it
+
+Cutting induced drag nearly in half changes the entire economics of moving something heavy over water. A WIG craft can carry more payload per unit of fuel than a conventional aircraft flying at cruise altitude, while moving several times faster than a boat displacing the same weight of water. That combination is exactly why the Soviet military built ekranoplans in the first place: fast, low-flying, radar-hugging vehicles that could move troops and missiles across the Caspian Sea without ever climbing high enough to look like a normal aircraft on radar. The concept stalled out for decades because flying a few meters over waves in real ocean chop is a genuinely hard control problem, not a flaw in the aerodynamics. Drift outside the effective band and the drag benefit disappears fast, and a swell tall enough to catch a wingtip at cruise speed is not a survivable mistake. What's changed is cheaper flight computers and radar altimeters that can hold that narrow band automatically over open chop, which is the piece Regent and ST Engineering are betting solves the problem this time.
+
+That's also why the newer designs lean autonomous: a computer reading a radar altimeter dozens of times a second holds that narrow band far more precisely than a human hand ever could, which is part of why the Marine Corps is watching an uncrewed version like the Regent Squire for logistics runs into contested coastline.
+
+Once you know why a wing gets a free ride near the surface, ground effect stops being a landing-flare footnote and starts looking like a design lever. The same 40 to 50 percent drag cut that makes a runway feel long during touchdown is what a growing list of companies and at least one navy are now trying to build an entire vehicle class around.
+
+---
+
+*Rohan Yadalla is an aerospace engineering student at Rutgers University finishing his final semester in December 2026. He's interning at AlphaWave, a healthcare AI startup, where he's building AI-powered tools for physician practices. He's actively exploring roles at the intersection of aerospace and AI systems. Connect on [LinkedIn](https://www.linkedin.com/in/rohan-yadalla/) or see his work on [GitHub](https://github.com/RohYada).*
